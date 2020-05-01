@@ -1,0 +1,119 @@
+\documentclass{cv}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+%\usepackage{comment}
+\usepackage[most]{tcolorbox}
+
+\newcommand{\ColorHref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+
+\tcbset{
+    frame code={}
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!40,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=0mm,
+    boxsep=5pt,
+    arc=0pt,outer arc=0pt,
+    }
+
+\begin{document}
+
+\name{John Smith}
+\contact{\href{mailto:johnsmith@example.com}{johnsmith@example.com}}{+1 222 333 444}{\ColorHref{https://www.linkedin.com/in/example-linkedin-profile/}{johnsmith}}
+
+% \par\vspace{1cm}
+
+\section{Working Experience}
+
+\par\vspace{.15cm}\noindent
+\noindent
+\begin{tcolorbox}
+\textbf{Freelance Software Developer} \hfill since September 2016
+\end{tcolorbox}
+
+\noindent
+\begin{itemize}
+    \item Developing custom WEB applications for clients.
+    \item Developing applications for AWS cloud platform.
+    \item Having experience with Google Cloud Plaform.
+    \item Etc. and more etc.
+\end{itemize}
+
+\par\vspace{.15cm}\noindent
+\textbf{Technologies:} C\#, ASP .NET, .NET Core, Java, Go, NodeJS
+
+\par\vspace{.15cm}\noindent
+\noindent
+\begin{tcolorbox}
+\textbf{Software Engineer} at \textbf{Microsoft} \hfill November 2008 -- September 2016
+\end{tcolorbox}
+
+\noindent
+Microsoft - company you are probably familiar with.
+
+\noindent
+\begin{itemize}
+    \item Part of a small team following SCRUM agile process.
+    \item Workign on MS Office suite
+    \item Some more things ...
+\end{itemize}
+
+\par\vspace{.15cm}\noindent
+\textbf{Technologies:} C\#, C++, Visual Basic
+
+\par\vspace{.25cm}
+
+% \noindent
+\section{Education}
+
+\uni{Master's degree}{Computer and Embedded Systems}{\lowercase{\href{http://www.some.school}}{Faculty of Information Technology}}{\lowercase{\href{http://www.some.shool}}{Some University}}{2008 -- 2010}
+
+\noindent\textit{Master's thesis} : {\href{http://link-to-website.com}{Name of MS thesis}}
+
+\par\vspace{.25cm}
+
+\uni{Bachelor's degree}{Information Technology}{\lowercase{\href{http://www.some.school}}{Faculty of Information Technology}}{\lowercase{\href{http://www.some.shool}}{Some University}}{2005 -- 2008}
+
+\noindent\textit{Bachelor's thesis} : {\href{http://link-to-website.com}{Name of BC thesis}
+
+%\par\vspace{.25cm}
+
+\section{Publications}
+
+\begin{tabularx}{0.95\textwidth}{p{1.5cm}X}
+	\hspace{.5cm} \textbf{2011} & J. Smith "Some Publication Name," IEEE Congress on Evolutionary Computation, Beijing, CN, 2011.
+\end{tabularx}
+
+\par\vspace{.5cm}
+
+\section{Most Recent Personal Projects}
+
+\begin{itemize}
+    \item \ColorHref{https://link-to-something-interesting.com}{\textbf{Name of App}} - Description of an app
+\end{itemize}
+
+\par\vspace{.5cm}
+
+\section{Primary Skills}
+
+\begin{itemize}
+    \item Programming in Windows \& Linux environments
+    \begin{itemize}
+        \item C\#, Modern C++
+        \item Python, Perl, Bash
+    \end{itemize}
+    \item WEB development
+    \begin{itemize}
+        \item Backend - NodeJS, ASP .NET, SQLite, MongoDB
+        \item Frontend - JavaScript, React, JQuery
+    \end{itemize}
+\end{itemize}
+
+\end{document}
+
